@@ -1,16 +1,16 @@
 {
-    "family": "hello-world-task",
+    "family": "service2-task",
     "containerDefinitions": [
         {
-            "image": "jramay/node-web-app:v_%BUILD_NUMBER%",
-            "name": "hello-world-container",
+            "image": "jramay/service2:v_%BUILD_NUMBER%",
+            "name": "service2-container",
             "cpu": 10,
             "memory": 256,
             "essential": true,
             "portMappings": [
                 {
-                  "hostPort": 8080,
-                  "containerPort": 8080,
+                  "hostPort": 8082,
+                  "containerPort": 8082,
                   "protocol": "tcp"
                 }
             ]
