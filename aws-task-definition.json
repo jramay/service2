@@ -1,0 +1,19 @@
+{
+    "family": "hello-world-task",
+    "containerDefinitions": [
+        {
+            "image": "jramay/node-web-app:v_%BUILD_NUMBER%",
+            "name": "hello-world-container",
+            "cpu": 10,
+            "memory": 256,
+            "essential": true,
+            "portMappings": [
+                {
+                  "hostPort": 8080,
+                  "containerPort": 8080,
+                  "protocol": "tcp"
+                }
+            ]
+        }
+    ]
+}
